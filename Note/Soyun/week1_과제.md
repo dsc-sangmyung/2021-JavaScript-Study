@@ -120,7 +120,82 @@ let message = (login == '직원') ? '안녕하세요.' :
 ```javascript
 2가 출력
 ```
+피연산자 중 첫 번째 truthy인 2가 출력.
+
 #### Q2. Or 연산자의 피연산자가 alert라면?
 ```javascript
-2가 출력
+1과 2가 출력
 ```
+- 첫번째 or연산자는 왼쪽 피연산자인 alert(1)를 평가함. (이때 첫 번째 얼럿 창에 1이 출력)
+- alert메서드는 undefined를 반환하기 때문에, OR 연산자는 truthy를 찾기 위해 다음 피연산자를 평가함.
+- 두 번째 피연산자(오른쪽 피연산자)인 2는 truthy이기 때문에 실행이 멈추고 2가 반환. 반환된 값 2는 제일 바깥 alert의 피연산자가 되어 두 번째 얼럿창에 출력.
+- 평가가 alert(3)까지 도달하지 못하기에 출력 x
+
+#### Q3. 다음 AND 연산자의 결과는?
+```javascript
+null 출력
+```
+ 피연산자 중 첫번째 거짓 값인 null을 출력한다.
+
+#### Q4. AND연산자의 피연산자가 alert라면?
+```javascript
+alert 창엔 1, undefined가 차례대로 출력
+```
+- &&는 왼쪽 피연산자를 평가하고(이때 1이 얼럿창에 출력됩니다) 평가를 즉시 멈춤.
+- alert(1)의 평가 결과는 undefined로 거짓값이기 때문.
+- && 연산자는 거짓값을 만나면 그 값을 출력하고 즉시 연산을 stop!!
+
+#### Q5. OR AND OR 연산자로 구성된 표현식
+```javascript
+alert 창엔 3이 출력
+```
+- &&의 우선순위는 ||보다 높습니다. 따라서 &&가 먼저 실행됩니다.
+- 2 && 3 = 3 이므로 3이 출력
+- Q. 2&& 3 = 3 ? 어떤 식으로 이게 출력되는가.
+
+#### Q6. 사이범위 확인하기
+```javascript
+let age;
+if(age >=14 && age<=90)
+```
+
+#### Q7. 바깥 범위 확인하기
+```javascript
+ NOT ! 연산자를 사용한 답안
+let age;
+if(!(age >=14 && age<=90))
+```
+```javascript
+ NOT ! 연산자를 사용하지 않은 답안
+let age;
+if(age <14 || age>90)
+```
+#### Q8. if에 관한 고찰 
+```javascript
+첫 번째 표현식과 세 번째 표현식에 있는 alert가 실행
+```
+#### Q9. 로그인 구현하기 
+```javascript
+let user = prompt('사용자를 입력해주세요.');
+if(user == "Admin"){
+    let password = prompt('비밀번호는 무엇일까요.');
+
+    if(password == 'TheMaster'){
+        alert('환영합니다.');
+    }
+    else if(password == '' || passwor == null){
+        alert('취소되었습니다.');
+    }
+    else{
+        alert('인증에 실패했습니다.');
+    }
+}
+else if(user == ''||user == null){
+    alert("취소 되었습니다.");
+}   
+else{
+    alert("인증에 실패했습니다.");
+}
+```
+
+### while과 for 반복문
