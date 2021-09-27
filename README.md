@@ -23,8 +23,6 @@
 - 8주차: [ES6] 01.let, const와 블록 레벨 스코프 ~ 06.디스트럭처링
 - 9주차: 07.클래스 ~ 12.제너레이터와 async/await
 
-## 과제 및 정리노트 업로드
+## 코드 제출 방법
 
-1. `Task`, `Note` 폴더에 각각 자기 이름으로 폴더를 만들어 줍니다.
-2. 자기 이름의 폴더에 과제, 정리노트를 몇 주차 활동인지 구분할 수 있게 업로드 해줍니다.
-
+이 레포에 있는 [git-help.md](https://github.com/dsc-sangmyung/2021-JavaScript-Study/blob/main/git-help.md) 파일을 참고하여 코드를 제출하시면 됩니다.
