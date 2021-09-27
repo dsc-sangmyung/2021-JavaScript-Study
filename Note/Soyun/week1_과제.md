@@ -199,3 +199,47 @@ else{
 ```
 
 ### while과 for 반복문
+#### Q1. 반복문의 마지막 값.
+```javascript
+1
+```
+이유 : 반복문이 끝날때마다 하나씩 감소 한다. (후위연산자이기에)
+#### Q2. while 반복문의 출력값 예상하기.
+```javascript
+1. 1,2,3,4 출력
+2. 1,2,3,4,5 출력 
+즉 서로 다른 값이 출력된다.
+```
+#### Q3. 'for'반복문의 출력값 예상하기.
+```javascript
+두 경우 모두 0~4까지 출력
+```
+#### Q4. for 반복문을 이용하여 짝수 출력
+```javascript
+for(let i = 2; i<=10 ; i++){
+    if(i%2 == 0){
+        alert(i);
+    }
+}
+```
+
+#### Q5. for 반복문을 while 반복문으로 바꾸기
+```javascript
+let i = 0;
+while (i < 3) {
+  alert( `number ${i}!` );
+  i++;
+}
+```
+#### Q6. 사용자가 유효한 값을 입력할때까지 프롬프트창 띄우기
+```javascript
+let num;
+
+do {
+  num = prompt("100을 초과하는 숫자를 입력해주세요.", 0);
+} while (num <= 100 && num);
+```
+#### Q7. 소수 출력하기.
+```javascript
+
+```
