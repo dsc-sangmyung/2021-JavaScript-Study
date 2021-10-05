@@ -1,1 +1,30 @@
+2.15
+#’”else”는 정말 필요한가요?
+동일하게 실행된다.
 
+#’?’나 ‘||’를 사용하여 함수 다시 작성하기
+-‘?-
+function checkage(age){
+     return (age > 18) ? true : confirm(“보호자의 동의를 받으셨나요?);}
+
+-||-
+function checkage(age) { 
+     return (age > 18) || confirm(“보호자의 동의를 받으셨나요?”);
+
+#min(a,b) 함수 만들기
+function min(a,b){
+   if(a<b) {return a;}
+   else {return b;}}
+
+#pow(x,n) 함수 만들기 
+
+2.17
+#화살표 함수로 변경하기
+function ask ( question, yes, no) {
+   if(confirm(question)) yes() 
+   else no();
+}
+let ask (
+“동의하십니까?”
+ () =>{ alert(“동의하셨습니다”); },
+ () = >{ alert(“취소 버튼을 누르셨습니다.”); }
