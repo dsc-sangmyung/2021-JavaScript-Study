@@ -40,4 +40,6 @@ let currentplanet = "Earth"
 
 let currentUserName = "Hyuna"
 
-//ㅣ
+//2-4. 대문자 상수 올바로 사용하기
+
+
