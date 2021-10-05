@@ -57,8 +57,8 @@ rabbit
 
 # 왜 햄스터 두마리의 배는 꽉 찰까요?
 lazy.stomach.push(...)와 speedy.stomach.push()를 호출했을 때 모두, 
-프로퍼티 stomach을 프로토타입에서 발견합니다(stomach이 객체 자체에 있지 않기 때문입니다). 
-따라서 새로운 데이터는 stomach에 추가됩니다.
+프로퍼티 stomach을 프로토타입에서 발견한다.(stomach이 객체 자체에 있지 않기 때문이다). 
+따라서 새로운 데이터는 stomach에 추가된다.
 
 8.2
 # ‘prototype’ 변경하기
