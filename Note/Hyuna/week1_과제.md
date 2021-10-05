@@ -44,5 +44,14 @@ let currentUserName = "Hyuna"
 
 실행 전에 이미 값을 알고 있고, 코드에서 그 값을 쓰는 경우이기 때문이다.
 
+//2-5. 문자열 따옴표
+
+let name = "Ilya";
+
+alert( `hello ${1}` ); // 
+
+alert( `hello ${"name"}` ); // 
+
+alert( `hello ${name}` ); //
 
 
