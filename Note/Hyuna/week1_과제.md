@@ -27,13 +27,17 @@
 //2-4. 변수 가지고 놀기
 
 let admin, name;
+
 name = "John";
+
 admin = name;
+
 alert( admin );
 
 //2-4. 올바른 이름 선택하기
 
 let currentplanet = "Earth"
+
 let currentUserName = "Hyuna"
 
 //ㅣ
