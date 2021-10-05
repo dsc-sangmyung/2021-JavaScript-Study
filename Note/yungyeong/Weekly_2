@@ -55,3 +55,17 @@ alert( table.money );
 # 어디에서 쓸까요?
 rabbit
 
+8.2
+# ‘prototype’ 변경하기
+1.	true
+2.	false
+3.	true
+4.	undefined
+
+8.3
+function.prototype.defer = function(ms) {
+  setTimeout(this, ms); };
+function f() {
+  alert("Hello!"); }
+f.defer(1000);
+
