@@ -1,4 +1,4 @@
-//2-1. alert 창 띄우기
+2-1. alert 창 띄우기
 <!DOCTYPE html>
 <html>
 
