@@ -1,4 +1,4 @@
-2-1. alert 창 띄우기
+//2-1. alert 창 띄우기
 <!DOCTYPE html>
 <html>
 
@@ -23,3 +23,9 @@
 </body>
 
 </html>
+
+//2-4. 변수 가지고 놀기
+let admin, name;
+name = "John";
+admin = name;
+alert( admin );
