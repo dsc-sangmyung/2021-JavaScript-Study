@@ -74,3 +74,15 @@ function f() {
   alert("Hello!"); }
 f.defer(1000);
 
+8.4
+let dictionary = Object.create(null, {
+  toString: { 
+   value() { 
+     return Object.keys(this).join();    } }
+});
+
+#호출 간의 차이점
+
+let rabbit = new Rabbit("Rabbit");
+첫 번째 호출이 rabbit을 출력하고 다른 호출은 underfined를 출력한다.
+
