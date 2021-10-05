@@ -28,3 +28,30 @@ let ask (
 “동의하십니까?”
  () =>{ alert(“동의하셨습니다”); },
  () = >{ alert(“취소 버튼을 누르셨습니다.”); }
+ 
+ 8.1
+# 프로토타입 이해하기
+1.	true
+2.	null
+3.	underfined
+
+# 검색알고리즘
+let head = {
+  glasses: 1 };
+let table = {
+pen: 3
+__proto__ : head };
+let bed = {
+  sheet: 1,
+pillow: 2
+__proto__ : table };
+let pockets = {
+money: 2000
+__proto__ : bed };
+alert( pockets.pen );
+alert( bed.glasses ); 
+alert( table.money );
+
+# 어디에서 쓸까요?
+rabbit
+
