@@ -75,6 +75,7 @@ function f() {
 f.defer(1000);
 
 8.4
+#사전에 tostring 추가하기
 let dictionary = Object.create(null, {
   toString: { 
    value() { 
@@ -82,7 +83,6 @@ let dictionary = Object.create(null, {
 });
 
 #호출 간의 차이점
-
 let rabbit = new Rabbit("Rabbit");
 첫 번째 호출이 rabbit을 출력하고 다른 호출은 underfined를 출력한다.
 
