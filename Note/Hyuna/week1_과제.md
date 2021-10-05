@@ -60,4 +60,16 @@ alert( `hello ${name}` ); // hello Ilya
 
 
 //2-6. 간단한 페이지 만들기
+<!DOCTYPE html>
+<html>
+<body>
 
+  <script>
+    'use strict';
+
+    let name = prompt("이름을 입력해 주세요.", "");
+    alert(name);
+  </script>
+
+</body>
+</html>
