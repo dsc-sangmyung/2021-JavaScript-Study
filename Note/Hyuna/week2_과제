@@ -57,10 +57,118 @@ ask(
 );
 
 //8.1 프로토타입 상속
--1. 1) true - rabbit 에서 가져온다
-    2) null - animal 에서 가져온다
-    3) undefined 더는 프로퍼티를 찾을 수가 없다. 
+-1. 1) true
+    2) null
+    3) undefined
+    
+-2. 1)
+let head = {
+  glasses: 1
+};
+
+let table = {
+  pen: 3,
+  __proto__: head
+};
+
+let bed = {
+  sheet: 1,
+  pillow: 2,
+  __proto__: table
+};
+
+let pockets = {
+  money: 2000,
+  __proto__: bed
+};
+
+alert( pockets.pen ); 
+alert( bed.glasses ); 
+alert( table.money ); 
+2)차이가 없다.
 
 //8.2 함수의 prototype 프로퍼티
+-1.
+-2. 
+function User(name) {
+  this.name = name;
+}
+
+let user = new User('John');
+let user2 = new user.constructor('Pete');
+
+alert( user2.name );
+
+<예시>
+function User(name) {
+  this.name = name;
+}
+User.prototype = {};
+
+let user = new User('John');
+let user2 = new user.constructor('Pete');
+
+alert( user2.name );
+
 //8.3 네이티브 프로토타입
+-1. 
+Function.prototype.defer = function(ms) {
+  setTimeout(this, ms);
+};
+
+function f() {
+  alert("Hello!");
+}
+
+f.defer(1000);
+-2. 
+Function.prototype.defer = function(ms) {
+  let f = this;
+  return function(...args) {
+    setTimeout(() => f.apply(this, args), ms);
+  }
+};
+
+let user = {
+  name: "John",
+  sayHi() {
+    alert(this.name);
+  }
+}
+
+user.sayHi = user.sayHi.defer(1000);
+
+user.sayHi();
+
 //8.4 프로토타입 메서드와 proto가 없는 객체
+-1. et dictionary = Object.create(null, {
+  toString: { 
+    value() { 
+      return Object.keys(this).join();
+    }
+  }
+});
+
+dictionary.apple = "Apple";
+dictionary.__proto__ = "test";
+
+for(let key in dictionary) {
+  alert(key);
+}
+
+alert(dictionary); // "apple,__proto__"
+-2. 
+function Rabbit(name) {
+  this.name = name;
+}
+Rabbit.prototype.sayHi = function() {
+  alert( this.name );
+}
+
+let rabbit = new Rabbit("Rabbit");
+
+rabbit.sayHi();                        
+Rabbit.prototype.sayHi();              
+Object.getPrototypeOf(rabbit).sayHi(); 
+rabbit.__proto__.sayHi();             
+
