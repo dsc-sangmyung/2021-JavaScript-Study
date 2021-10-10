@@ -46,4 +46,37 @@ function multiplyNumeric(obj){
   if(typeof obj[key] == 'num'){
     obj[key] *=2;
 ```
+### 4.4
+#### “객체 리터럴에서 ‘this’ 사용하기
+```javascript
+에러가 발생한다. This값 설정에 객체 정의를 사용했기 때문이다.
 
+“계산기 만들기”
+let calculator = {
+   read() {
+    this.a = +prompt(“첫번째 값”, );
+    this.b = +prompt(“두번째 값”, ); },
+sum() {
+return this.a + this.b;},
+mul() {
+return this.a * this.b}};
+```
+#### “체이닝”
+
+### 6.3
+#### “Does a function pickup latest changes?”
+```javascript
+답은 Pete이다. 
+가장 최근의 값을 사용하기 때문이다.
+```
+#### “Which variables are available?”
+```javascript
+답은 Pete이다.
+내부에 let name이 선언되어 있어서 내부에서 변수 name이 Pete이기 때문이다.
+내부에 let name이 없었다면 외부로 검색범위가 확장되어서 John이 답이 되었을 것이다.
+```
+#### “counter는 독립적일까요?”
+```javascript
+답은 0, 1이 출력된다.
+두 함수 counter와 counter2에서 각각 독립적인 렉시컬 환경을 가지게 되기 때문이다.
+```
