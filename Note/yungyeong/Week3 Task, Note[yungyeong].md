@@ -65,15 +65,19 @@ return this.a * this.b}};
 
 ### 6.3
 #### “Does a function pickup latest changes?”
+```
 답은 Pete이다. 
 가장 최근의 값을 사용하기 때문이다.
-
+```
 #### “Which variables are available?”
+```
 답은 Pete이다.
 내부에 let name이 선언되어 있어서 내부에서 변수 name이 Pete이기 때문이다.
 내부에 let name이 없었다면 외부로 검색범위가 확장되어서 John이 답이 되었을 것이다.
-
+```
 #### “counter는 독립적일까요?”
+```
 답은 0, 1이 출력된다.
 두 함수 counter와 counter2에서 각각 독립적인 렉시컬 환경을 가지게 되기 때문이다.
+```
 
