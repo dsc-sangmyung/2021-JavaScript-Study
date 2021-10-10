@@ -48,10 +48,11 @@ function multiplyNumeric(obj){
 ```
 ### 4.4
 #### “객체 리터럴에서 ‘this’ 사용하기
-```javascript
+```
 에러가 발생한다. This값 설정에 객체 정의를 사용했기 때문이다.
-
-“계산기 만들기”
+```
+#### “계산기 만들기”
+```javascript
 let calculator = {
    read() {
     this.a = +prompt(“첫번째 값”, );
@@ -79,5 +80,14 @@ return this.a * this.b}};
 ```
 답은 0, 1이 출력된다.
 두 함수 counter와 counter2에서 각각 독립적인 렉시컬 환경을 가지게 되기 때문이다.
+```
+#### “counter 객체”
+```
+동작한다. 같은 count 변수를 사용하기 때문이다.
+```
+#### “if문 안의 함수”
+```
+에러가 난다. 
+sayHi함수를 if문 안에 정의했하여 if문 안에서만 접근할 수 있는데 if문 밖에서 접근했기때문이다.
 ```
 
