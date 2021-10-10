@@ -98,4 +98,28 @@ let ladder = {
 ladder.up().up().down().up().down().showStep();
 ```
 ### 변수의 유효범위와 클로저
-#### Q1. 
+#### Q1. Does a function pickup latest changes?
+```javascript
+Pete
+```
+
+#### Q2. Which variables are available?
+```javascript
+Pete
+```
+
+#### Q3. counter는 독립적일까요?
+```javascript
+0과 1 출력
+```
+
+####  Q4. counter 객체
+```javascript
+동작 잘함
+```
+
+#### Q5. if 문 안의 함수
+```javascript
+sayHi는 if문안에서만 작성했기에 if문안에서만 접근할 수 있다.
+=> 오류 발생
+```
