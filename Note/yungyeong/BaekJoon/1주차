@@ -1,0 +1,22 @@
+1000번
+'''javascript
+let n = prompt('최백준 조교의 돈');
+let m = prompt('생명체의 수 ');
+console.log(parseInt(n)+parseInt(m));
+'''
+
+1001번
+'''javascript
+let n = prompt('최백준 조교의 돈');
+let m = prompt('생명체의 수 ');
+console.log(parseInt(n)-parseInt(m));
+'''
+
+1271
+'''javascript
+let n = prompt('최백준 조교의 돈');
+let m = prompt('생명체의 수 ');
+
+console.log (n/m);
+console.log (n%m);
+'''
