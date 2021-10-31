@@ -54,7 +54,7 @@ console.log(style.shift());
 styles.unshift("Rap", "Reggae");
 ```
 
-**5.4.3 배열 컨텍스트에서 함수 호출하기 **
+**5.4.3 배열 컨텍스트에서 함수 호출하기**
 
 - arr 배열이 출력된다.
 - arr[2]에 함수가 추가되고 호출되어 arr 배열을 참조하는 this로 인해 배열을 출력한다.
@@ -106,7 +106,7 @@ function getMaxSubSum(arr) {
 
 ```
 
-**5.5.2 특정 범위에 속하는 요소 찾기 **
+**5.5.2 특정 범위에 속하는 요소 찾기**
 
 ```javascript
 function filterRange(arr, a, b) {
@@ -141,7 +141,7 @@ function copySorted(arr) {
 }
 ```
 
-**5.5.6 확장 가능한 계산기 **
+**5.5.6 확장 가능한 계산기**
 
 **5.5.7 이름 매핑하기**
 
@@ -172,7 +172,7 @@ function sortByAge(arr) {
 
 ```
 
-**5.5.11 평균 나이 구하기 **
+**5.5.11 평균 나이 구하기**
 
 ```javascript
 function getAverageAge(users) {
@@ -180,20 +180,20 @@ function getAverageAge(users) {
 }
 ```
 
-**5.5.12 중복 없는 요소 찾아내기 **
+**5.5.12 중복 없는 요소 찾아내기**
 
 ```javascript
 
 ```
 
-**5.5.13 Create keyed object from array **
+**5.5.13 Create keyed object from array**
 
 ```javascript
 
 ```
 
 ## 6.8 setTimeout과 setInterval을 이용한 호출 스케줄링
-**6.8.1 일초 간격으로 숫자 출력하기 **
+**6.8.1 일초 간격으로 숫자 출력하기**
 
 ```javascript
 // setInterval
