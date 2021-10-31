@@ -122,4 +122,5 @@ function getLastDayOfMonth(year, month) {
 alert( getLastDayOfMonth(2012, 0) ); 
 alert( getLastDayOfMonth(2012, 1) ); 
 alert( getLastDayOfMonth(2013, 1) );
+
 ```
