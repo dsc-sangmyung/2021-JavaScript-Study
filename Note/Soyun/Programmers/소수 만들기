@@ -1,0 +1,23 @@
+```javascript
+function solution(nums) {
+    let answer = 0;
+    let lens = nums.length;
+    
+    for(let i = 0; i<lens;i++){
+        for(let j = i+1;j<lens;j++){
+            for(let k = j+1;k<lens;k++){
+                const sum = nums[i]+nums[j]+nums[k];
+                if(isPrime(sum))
+                    answer++;
+            }
+        }
+    }
+    
+    return answer;
+}
+function isPrime(sum){
+    for(let i = 2;i<sum;i++)
+    if(sum % i === 0) return false; //이 부분 이해안됨.
+    return sum > 1;
+}
+```
