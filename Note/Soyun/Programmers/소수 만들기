@@ -20,4 +20,16 @@ function isPrime(sum){
     if(sum % i === 0) return false; //이 부분 이해안됨.
     return sum > 1;
 }
+
+/* 다른 사람의 풀이
+function isPrime(n){
+    for(var i=2;i<=Math.sqrt(n);i++){ // 왜 제곱근으로 설정했는지
+        if(n%i == 0){// 나머지가 0이면
+            return false;  //false를 출력
+        }
+    }
+    return true;    //그렇지 않을때만 true를 출력해서 소수를 
+}
+
+*/
 ```
