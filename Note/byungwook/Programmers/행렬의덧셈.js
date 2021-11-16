@@ -1,5 +1,5 @@
 function solution(arr1, arr2) {
-    let answer = arr1.slice();
+    let answer = [...arr1];
     
     for (let i = 0; i < arr1.length; i++) {
         for (let j = 0; j < arr1[0].length; j++){
